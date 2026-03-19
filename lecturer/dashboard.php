@@ -22,7 +22,7 @@ if (isset($_POST['generate'])) {
 
     $session_token = $token;
 
-    $base_url = "http://192.168.1.211/intelliford_attendance";
+    $base_url = "http://192.168.1.186/intelliford_attendance";
     $qr_url = $base_url . "/mark.php?token=" . $token;
 
     $generated_course = $conn->query("SELECT code, name FROM courses WHERE id = $course_id")->fetch_assoc();
